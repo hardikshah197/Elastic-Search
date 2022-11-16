@@ -1,4 +1,4 @@
-package main
+package elasticsearch
 
 import (
 	"context"
@@ -11,7 +11,7 @@ import (
 	"github.com/elastic/go-elasticsearch/esapi"
 )
 
-func LoadData() {
+func Load() {
 	var spacecrafts []map[string]interface{}
 	pageNumber := 0
 	for {
